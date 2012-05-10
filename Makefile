@@ -26,7 +26,9 @@ generatepm: %: Makefile-setupenv
 PERL_ENV = PATH=$(PERL_PATH):$(PATH) PERL5LIB=$(shell cat config/perl/libs.txt)
 PROVE = prove
 
-test: carton-install config/perl/libs.txt safetest
+test: test-deps safetest
+
+test-deps: carton-install config/perl/libs.txt
 
 safetest:
 	$(PERL_ENV) $(PROVE) t/**.t
