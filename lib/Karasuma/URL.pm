@@ -1,6 +1,7 @@
 package Karasuma::URL;
 use strict;
 use warnings;
+our $VERSION = '1.0';
 use URL::PercentEncode;
 use Encode;
 use Storable qw/dclone/;
@@ -37,6 +38,7 @@ sub new {
     
     # XXX list
 
+    # Don't use List::Rubyish as blessing is too heavy (ack: cho45)
     $self->{path} ||= [];
     $self->{qparams} ||= {};
     

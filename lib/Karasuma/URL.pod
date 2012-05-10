@@ -1,0 +1,26 @@
+=head1 NAME
+
+Karasuma::URL - A URL module
+
+=head1 DESCRIPTION
+
+The C<Karasuma::URL> module is a yet another interface to construct
+URLs.
+
+=head1 AUTHOR
+
+Wakaba (id:wakabatan) <wakabatan@hatena.ne.jp>.
+
+=head1 ACKNOWLEDGEMENTS
+
+This module was initially created at 2009-06-11 as part of Flipnote
+Hatena project.  Thanks to cho45 for his helpful advice.
+
+=head1 LICENSE
+
+Copyright 2009-2012 Hatena <http://www.hatena.com/>.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
